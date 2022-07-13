@@ -1,24 +1,300 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="XfS-Ye-b6z">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
-        <scene sceneID="tne-QT-ifu">
+        <!--Tab Bar Controller-->
+        <scene sceneID="38x-YH-8ib">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" xcode11CocoaTouchSystemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <tabBarController id="XfS-Ye-b6z" sceneMemberID="viewController">
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="vH5-lw-6Kv">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="KrV-v8-tgJ" kind="relationship" relationship="viewControllers" id="dx6-ad-57w"/>
+                        <segue destination="RmA-zf-Zaf" kind="relationship" relationship="viewControllers" id="TcR-xs-aV9"/>
+                        <segue destination="5Ee-5z-qBy" kind="relationship" relationship="viewControllers" id="TNK-8n-04k"/>
+                        <segue destination="2hE-8h-fSa" kind="relationship" relationship="viewControllers" id="5Mh-nQ-omo"/>
+                        <segue destination="PXk-VF-fwm" kind="relationship" relationship="viewControllers" id="OpX-Ys-K6o"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="wbE-RY-52U" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="-39" y="644"/>
+        </scene>
+        <!--Perfil-->
+        <scene sceneID="7at-H4-PVK">
+            <objects>
+                <viewController id="KrV-v8-tgJ" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Lio-UX-Naq">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="8H1-Pw-Yyv">
+                                <rect key="frame" x="20" y="144" width="374" height="569"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="person.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="vNh-d6-YyE">
+                                        <rect key="frame" x="0.0" y="1.5" width="374" height="111"/>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Datos Personales" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZxS-Sq-F6w">
+                                        <rect key="frame" x="0.0" y="114" width="374" height="113.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                        <color key="textColor" red="1" green="0.14913141730000001" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Nombre : Mauricio Malvez Moreno" textAlignment="justified" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mPM-Za-xGM">
+                                        <rect key="frame" x="0.0" y="227.5" width="374" height="114"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Fecha de Nacimiento: 24/09/1995" textAlignment="justified" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HFH-Cn-Uzi">
+                                        <rect key="frame" x="0.0" y="341.5" width="374" height="113.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sexo: Hombre Edad: 26" textAlignment="justified" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Vul-qY-mwA">
+                                        <rect key="frame" x="0.0" y="455" width="374" height="114"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="pVD-XV-Af6"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="8H1-Pw-Yyv" firstAttribute="leading" secondItem="pVD-XV-Af6" secondAttribute="leading" constant="20" id="0gb-0W-BYB"/>
+                            <constraint firstItem="pVD-XV-Af6" firstAttribute="trailing" secondItem="8H1-Pw-Yyv" secondAttribute="trailing" constant="20" id="G4V-es-TuA"/>
+                            <constraint firstItem="pVD-XV-Af6" firstAttribute="bottom" secondItem="8H1-Pw-Yyv" secondAttribute="bottom" constant="100" id="WSp-hA-4Np"/>
+                            <constraint firstItem="8H1-Pw-Yyv" firstAttribute="top" secondItem="pVD-XV-Af6" secondAttribute="top" constant="100" id="pHv-Pm-tea"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Perfil" image="person" catalog="system" selectedImage="person" id="Aak-J0-OdH"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="E6P-AV-ZEn" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="867" y="382"/>
+        </scene>
+        <!--Estudios-->
+        <scene sceneID="qbJ-x0-xpU">
+            <objects>
+                <viewController id="2hE-8h-fSa" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="r3d-SF-kXG">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="rwL-4Q-H2n">
+                                <rect key="frame" x="20" y="144" width="374" height="569"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Datos Academicos" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ohe-3k-yUi">
+                                        <rect key="frame" x="0.0" y="0.0" width="374" height="114"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                        <color key="textColor" red="1" green="0.14913141730000001" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Primaria: 2 de Marzo" textAlignment="justified" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RyF-7I-Tof">
+                                        <rect key="frame" x="0.0" y="114" width="374" height="113.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                        <size key="shadowOffset" width="2" height="-3"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Secundaria: Independencia" textAlignment="justified" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fUR-jU-w9C">
+                                        <rect key="frame" x="0.0" y="227.5" width="374" height="114"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Preparatoria: Plantel Conalep Zitacuaro" textAlignment="justified" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uZz-SV-PHw">
+                                        <rect key="frame" x="0.0" y="341.5" width="374" height="113.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Universidad : Instituto Tecnologico de Zitacuaro" textAlignment="justified" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jnl-hZ-Fof">
+                                        <rect key="frame" x="0.0" y="455" width="374" height="114"/>
+                                        <rect key="contentStretch" x="0.45000000000000001" y="0.0" width="1" height="1"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                        <size key="shadowOffset" width="25" height="25"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="Rub-NA-uva"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="rwL-4Q-H2n" firstAttribute="leading" secondItem="Rub-NA-uva" secondAttribute="leading" constant="20" id="POO-At-t1m"/>
+                            <constraint firstItem="rwL-4Q-H2n" firstAttribute="top" secondItem="Rub-NA-uva" secondAttribute="top" constant="100" id="jcx-jx-1yI"/>
+                            <constraint firstItem="Rub-NA-uva" firstAttribute="trailing" secondItem="rwL-4Q-H2n" secondAttribute="trailing" constant="20" id="x8O-n2-enj"/>
+                            <constraint firstItem="Rub-NA-uva" firstAttribute="bottom" secondItem="rwL-4Q-H2n" secondAttribute="bottom" constant="100" id="zmh-Ka-R48"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Estudios" image="icons8-autógrafo-48.png" id="NA7-Eu-BUP"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ZYc-O8-5IC" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1473.913043478261" y="-291.29464285714283"/>
+        </scene>
+        <!--Experiencia-->
+        <scene sceneID="Enj-mq-yZz">
+            <objects>
+                <viewController id="5Ee-5z-qBy" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="cgi-9X-zAI">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="wXm-DV-Jrp">
+                                <rect key="frame" x="20" y="144" width="110" height="200"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Experiencias Laborales" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5X3-Fw-bTx">
+                                        <rect key="frame" x="0.0" y="0.0" width="110" height="100"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                        <color key="textColor" red="1" green="0.14913141730000001" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="justified" id="y6r-Ne-Nvd">
+                                        <rect key="frame" x="0.0" y="100" width="110" height="100"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                        <string key="text">Desarrollo de aplicaciones web .                                                                                     Bases de datos (Dml y ddl )        Mysql,SqlServer.                                               Programacion en Php  , Java , C++,Ensamblador,Android Studio.</string>
+                                        <color key="textColor" systemColor="labelColor"/>
+                                        <fontDescription key="fontDescription" type="system" weight="medium" pointSize="20"/>
+                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                    </textView>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="uQL-ff-H95"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="wXm-DV-Jrp" firstAttribute="top" secondItem="uQL-ff-H95" secondAttribute="top" constant="100" id="3aw-N9-n01"/>
+                            <constraint firstItem="uQL-ff-H95" firstAttribute="bottom" secondItem="wXm-DV-Jrp" secondAttribute="bottom" constant="100" id="OPy-7N-eyj"/>
+                            <constraint firstItem="wXm-DV-Jrp" firstAttribute="leading" secondItem="uQL-ff-H95" secondAttribute="leading" constant="20" id="a80-bF-NVH"/>
+                            <constraint firstItem="uQL-ff-H95" firstAttribute="trailing" secondItem="wXm-DV-Jrp" secondAttribute="trailing" constant="20" id="otW-cU-LG2"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Experiencia" image="folder.fill" catalog="system" selectedImage="folder" id="Z53-Ma-xhs"/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="VQY-0A-E3h" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1139.1304347826087" y="1272.9910714285713"/>
+        </scene>
+        <!--Contacto-->
+        <scene sceneID="KF5-fW-gc1">
+            <objects>
+                <viewController id="RmA-zf-Zaf" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="hVo-F4-5iK">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="kxg-4B-NET">
+                                <rect key="frame" x="20" y="144" width="374" height="569"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Datos Contacto" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Lo1-ka-ayf">
+                                        <rect key="frame" x="0.0" y="0.0" width="374" height="189.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                        <color key="textColor" red="1" green="0.14913141730000001" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Telefono: 7152-54-48-67" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xxG-b6-Pcq">
+                                        <rect key="frame" x="0.0" y="189.5" width="374" height="190"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Email: maurimalva@hotmail.com" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1Ct-Ef-nFx">
+                                        <rect key="frame" x="0.0" y="379.5" width="374" height="189.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="PPT-6P-V8w"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="kxg-4B-NET" firstAttribute="leading" secondItem="PPT-6P-V8w" secondAttribute="leading" constant="20" id="OzW-1e-DRf"/>
+                            <constraint firstItem="kxg-4B-NET" firstAttribute="top" secondItem="PPT-6P-V8w" secondAttribute="top" constant="100" id="SpL-qm-Azn"/>
+                            <constraint firstItem="PPT-6P-V8w" firstAttribute="trailing" secondItem="kxg-4B-NET" secondAttribute="trailing" constant="20" id="Z30-8x-mzT"/>
+                            <constraint firstItem="PPT-6P-V8w" firstAttribute="bottom" secondItem="kxg-4B-NET" secondAttribute="bottom" constant="100" id="iuO-iH-KgK"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Contacto" image="teletype.answer" catalog="system" selectedImage="teletype.answer" id="Vj9-Sg-pzN"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="7U0-zN-qcw" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="833" y="1088"/>
+        </scene>
+        <!--Trabajos-->
+        <scene sceneID="QJK-4c-mSD">
+            <objects>
+                <viewController id="PXk-VF-fwm" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Wav-dN-UTh">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="WKp-fM-oA8">
+                                <rect key="frame" x="20" y="144" width="374" height="569"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Trabajos Anteriores" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Lt5-yO-k8I">
+                                        <rect key="frame" x="0.0" y="0.0" width="374" height="284.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                        <color key="textColor" red="1" green="0.14913141730000001" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="5ad-zu-HWV">
+                                        <rect key="frame" x="0.0" y="284.5" width="374" height="284.5"/>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                        <string key="text">2019 - 2020 Residencias en el El instituto tecnologico de Zitacuaro .                                                                                          2020- 2021 At&amp;t Network Security.                                                                                                                      2022 - ---- Grupo Salinas</string>
+                                        <color key="textColor" systemColor="labelColor"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                    </textView>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="Jdd-e9-cQJ"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="Jdd-e9-cQJ" firstAttribute="trailing" secondItem="WKp-fM-oA8" secondAttribute="trailing" constant="20" id="9nn-BB-h5D"/>
+                            <constraint firstItem="WKp-fM-oA8" firstAttribute="top" secondItem="Jdd-e9-cQJ" secondAttribute="top" constant="100" id="dDn-zM-XOJ"/>
+                            <constraint firstItem="WKp-fM-oA8" firstAttribute="leading" secondItem="Jdd-e9-cQJ" secondAttribute="leading" constant="20" id="f4K-kI-nZ1"/>
+                            <constraint firstItem="Jdd-e9-cQJ" firstAttribute="bottom" secondItem="WKp-fM-oA8" secondAttribute="bottom" constant="100" id="nTj-we-OdP"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Trabajos" image="folder" catalog="system" id="qqw-ga-RNG"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Eo3-ZS-cxO" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1275" y="600"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="folder" catalog="system" width="128" height="97"/>
+        <image name="folder.fill" catalog="system" width="128" height="97"/>
+        <image name="icons8-autógrafo-48.png" width="48" height="48"/>
+        <image name="person" catalog="system" width="128" height="117"/>
+        <image name="person.fill" catalog="system" width="128" height="120"/>
+        <image name="teletype.answer" catalog="system" width="128" height="89"/>
+        <systemColor name="labelColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
 </document>

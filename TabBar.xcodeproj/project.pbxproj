@@ -9,21 +9,35 @@
 /* Begin PBXBuildFile section */
 		593CCD72287E0DD60037D062 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 593CCD71287E0DD60037D062 /* AppDelegate.swift */; };
 		593CCD74287E0DD60037D062 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 593CCD73287E0DD60037D062 /* SceneDelegate.swift */; };
-		593CCD76287E0DD60037D062 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 593CCD75287E0DD60037D062 /* ViewController.swift */; };
 		593CCD79287E0DD60037D062 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 593CCD77287E0DD60037D062 /* Main.storyboard */; };
 		593CCD7B287E0DD80037D062 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 593CCD7A287E0DD80037D062 /* Assets.xcassets */; };
 		593CCD7E287E0DD80037D062 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 593CCD7C287E0DD80037D062 /* LaunchScreen.storyboard */; };
+		593CCD88287E1F440037D062 /* icons8-autógrafo-48.png in Resources */ = {isa = PBXBuildFile; fileRef = 593CCD87287E1F430037D062 /* icons8-autógrafo-48.png */; };
+		593CCD8A287E21210037D062 /* icons8-registrarse-por-correo-24.png in Resources */ = {isa = PBXBuildFile; fileRef = 593CCD89287E21210037D062 /* icons8-registrarse-por-correo-24.png */; };
+		593CCD8C287E24AD0037D062 /* PerfilController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 593CCD8B287E24AD0037D062 /* PerfilController.swift */; };
+		593CCD8E287E25120037D062 /* EstudiosController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 593CCD8D287E25120037D062 /* EstudiosController.swift */; };
+		593CCD90287E256B0037D062 /* ExperienciaController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 593CCD8F287E256B0037D062 /* ExperienciaController.swift */; };
+		593CCD92287E265C0037D062 /* TrabajosController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 593CCD91287E265C0037D062 /* TrabajosController.swift */; };
+		593CCD94287E27810037D062 /* ContactoController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 593CCD93287E27810037D062 /* ContactoController.swift */; };
+		593CCD96287E28DE0037D062 /* TabbarControllerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 593CCD95287E28DD0037D062 /* TabbarControllerViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		593CCD6E287E0DD60037D062 /* TabBar.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TabBar.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		593CCD71287E0DD60037D062 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		593CCD73287E0DD60037D062 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		593CCD75287E0DD60037D062 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		593CCD78287E0DD60037D062 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		593CCD7A287E0DD80037D062 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		593CCD7D287E0DD80037D062 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		593CCD7F287E0DD80037D062 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		593CCD87287E1F430037D062 /* icons8-autógrafo-48.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icons8-autógrafo-48.png"; sourceTree = "<group>"; };
+		593CCD89287E21210037D062 /* icons8-registrarse-por-correo-24.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icons8-registrarse-por-correo-24.png"; sourceTree = "<group>"; };
+		593CCD8B287E24AD0037D062 /* PerfilController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PerfilController.swift; sourceTree = "<group>"; };
+		593CCD8D287E25120037D062 /* EstudiosController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EstudiosController.swift; sourceTree = "<group>"; };
+		593CCD8F287E256B0037D062 /* ExperienciaController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExperienciaController.swift; sourceTree = "<group>"; };
+		593CCD91287E265C0037D062 /* TrabajosController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrabajosController.swift; sourceTree = "<group>"; };
+		593CCD93287E27810037D062 /* ContactoController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactoController.swift; sourceTree = "<group>"; };
+		593CCD95287E28DD0037D062 /* TabbarControllerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabbarControllerViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +70,38 @@
 		593CCD70287E0DD60037D062 /* TabBar */ = {
 			isa = PBXGroup;
 			children = (
+				593CCD87287E1F430037D062 /* icons8-autógrafo-48.png */,
+				593CCD89287E21210037D062 /* icons8-registrarse-por-correo-24.png */,
+				593CCD86287E14950037D062 /* Image */,
+				593CCD85287E13150037D062 /* Controller */,
 				593CCD71287E0DD60037D062 /* AppDelegate.swift */,
 				593CCD73287E0DD60037D062 /* SceneDelegate.swift */,
-				593CCD75287E0DD60037D062 /* ViewController.swift */,
 				593CCD77287E0DD60037D062 /* Main.storyboard */,
 				593CCD7A287E0DD80037D062 /* Assets.xcassets */,
 				593CCD7C287E0DD80037D062 /* LaunchScreen.storyboard */,
 				593CCD7F287E0DD80037D062 /* Info.plist */,
 			);
 			path = TabBar;
+			sourceTree = "<group>";
+		};
+		593CCD85287E13150037D062 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				593CCD8B287E24AD0037D062 /* PerfilController.swift */,
+				593CCD8D287E25120037D062 /* EstudiosController.swift */,
+				593CCD8F287E256B0037D062 /* ExperienciaController.swift */,
+				593CCD91287E265C0037D062 /* TrabajosController.swift */,
+				593CCD93287E27810037D062 /* ContactoController.swift */,
+				593CCD95287E28DD0037D062 /* TabbarControllerViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		593CCD86287E14950037D062 /* Image */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Image;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -127,7 +164,9 @@
 			files = (
 				593CCD7E287E0DD80037D062 /* LaunchScreen.storyboard in Resources */,
 				593CCD7B287E0DD80037D062 /* Assets.xcassets in Resources */,
+				593CCD88287E1F440037D062 /* icons8-autógrafo-48.png in Resources */,
 				593CCD79287E0DD60037D062 /* Main.storyboard in Resources */,
+				593CCD8A287E21210037D062 /* icons8-registrarse-por-correo-24.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -138,9 +177,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				593CCD76287E0DD60037D062 /* ViewController.swift in Sources */,
+				593CCD96287E28DE0037D062 /* TabbarControllerViewController.swift in Sources */,
+				593CCD92287E265C0037D062 /* TrabajosController.swift in Sources */,
+				593CCD94287E27810037D062 /* ContactoController.swift in Sources */,
 				593CCD72287E0DD60037D062 /* AppDelegate.swift in Sources */,
 				593CCD74287E0DD60037D062 /* SceneDelegate.swift in Sources */,
+				593CCD90287E256B0037D062 /* ExperienciaController.swift in Sources */,
+				593CCD8C287E24AD0037D062 /* PerfilController.swift in Sources */,
+				593CCD8E287E25120037D062 /* EstudiosController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
